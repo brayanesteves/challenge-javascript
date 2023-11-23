@@ -37,3 +37,17 @@
  * Codigo
  * 17
  */
+function fizzBuzz(word1, word2, num1, num2, num3) {
+    for(let i = 1; i <= num3; i++) {
+        if(i % num1 === 0 && i % num2 === 0) {
+            console.log(`${word1}${word2}`);
+        } else if(i % num1 === 0) {
+            console.log(word1);
+        } else if(i % num2 === 0) {
+            console.log(word2);
+        } else {
+            console.log(i);
+        }
+    }
+}
+fizzBuzz('Code', 'Project', 2, 7, 17);
